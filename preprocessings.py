@@ -116,6 +116,7 @@ def get_preprocessed_data(dataset_path, pretrained_glove_path, num_labels, trend
   df = normalize(df)
   df = get_embedded_text(df, pretrained_glove_path)
   df = generate_label(df, num_labels)
+  df = df.drop_duplicates(subset=['title','view_count_log'])
   df = drop_column(df)
 
   return df
