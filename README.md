@@ -1,5 +1,7 @@
 # youtube_classification
 
+The final report is [here](./Report.pdf).
+
 #### youtube_scraper
 
 <p>simple youtube video scraper, scraper.py get 200 daily trending video in each region, search_scraper.py search by keyword, all data output to csv files</p>
